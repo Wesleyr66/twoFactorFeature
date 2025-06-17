@@ -1,4 +1,4 @@
-# 🔐 2FA Authentication with Google Authenticator (Node.js + Vanilla JS)
+# 🔐 2FA Authentication
 
 This is a simple project that demonstrates how to implement **Two-Factor Authentication (2FA)** using **Google Authenticator**, with:
 
@@ -12,7 +12,7 @@ This is a simple project that demonstrates how to implement **Two-Factor Authent
 
 ### 🔧 1. Clone or Download the Project
 
-
+https://github.com/Wesleyr66/twoFactor.git
 cd twoFactor/backend
 
 ### 2. Install Backend Dependencies
