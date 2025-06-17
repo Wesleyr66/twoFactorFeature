@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>2FA com Google Authenticator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 600px; margin: auto; }
+    #qr { margin: 1rem 0; }
+    input, button { padding: 0.5rem; margin-top: 0.5rem; display: block; width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Autenticação de 2 Fatores</h1>
+
+  <button onclick="gerarQRCode(event)">1️⃣ Gerar QR Code</button>
+  <div id="qr-container" style="display: none;">
+    <img id="qr" src="" alt="QR Code" />
+    <label for="codigo">2️⃣ Digite o código do Google Authenticator:</label>
+    <input type="text" id="codigo" placeholder="Ex: 123456" />
+    <button onclick="confirmarCodigo(event)">✅ Confirmar Código</button>
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <h2>🔐 Validação de Login com 2FA</h2>
+    <label for="validar">Digite o código atual do seu app:</label>
+    <input type="text" id="validar" placeholder="Ex: 654321" />
+    <button onclick="validar2FA(event)">Verificar código</button>
+  </div>
+
+  <div id="mensagem" style="margin-top: 1rem; color: green;"></div>
+
+  <script src="setup.js"></script>
+</body>
+</html>

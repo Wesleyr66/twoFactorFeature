@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "email": "usuario@example.com",
+    "senha": "123456",
+    "twoFactorEnabled": true,
+    "twoFactorSecret": "OU3DQVDHIJ2TQPS5LBEHKMJVHBIXQRZIPAQVON3IJFXTCTREENTA",
+    "temp2FASecret": "KFKTC2JYEVCFUMLXHNTU453WMFLFI5ZQOVFXMORQPMYT6PR7KRLA"
+  }
+]
