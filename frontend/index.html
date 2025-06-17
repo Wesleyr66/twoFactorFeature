@@ -12,19 +12,19 @@
 <body>
   <h1>Autenticação de 2 Fatores</h1>
 
-  <button onclick="gerarQRCode(event)">1️⃣ Gerar QR Code</button>
+  <button type="button" onclick="gerarQRCode(event)">1️⃣ Gerar QR Code</button>
   <div id="qr-container" style="display: none;">
     <img id="qr" src="" alt="QR Code" />
     <label for="codigo">2️⃣ Digite o código do Google Authenticator:</label>
     <input type="text" id="codigo" placeholder="Ex: 123456" />
-    <button onclick="confirmarCodigo(event)">✅ Confirmar Código</button>
+    <button type="button" onclick="confirmarCodigo(event)">✅ Confirmar Código</button>
   </div>
 
   <div style="margin-top: 3rem;">
     <h2>🔐 Validação de Login com 2FA</h2>
     <label for="validar">Digite o código atual do seu app:</label>
     <input type="text" id="validar" placeholder="Ex: 654321" />
-    <button onclick="validar2FA(event)">Verificar código</button>
+    <button type="button" onclick="validar2FA(event)">Verificar código</button>
   </div>
 
   <div id="mensagem" style="margin-top: 1rem; color: green;"></div>
